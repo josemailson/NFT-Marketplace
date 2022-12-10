@@ -18,7 +18,7 @@
     text-align: center;
     background-color: #f1f1f1;
     border-radius: 10px;
-    height: 25rem;
+    height: 24rem;
   }
 
   .card img {
@@ -31,7 +31,7 @@
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -39,7 +39,7 @@
     border-radius: 10px;
 }
 
-  @media (max-width:600px){
+  @media (max-width:800px){
 	.column {
         display: block;
         width: 10rem;
