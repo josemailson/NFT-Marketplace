@@ -1,52 +1,150 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Roboto Mono', monospace;
-  }
+body {
+  font-family: 'Roboto Mono', monospace;
+}
 
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
+main {
+  padding: 1rem;
+}
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    height: 24rem;
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  margin-right: 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  height: 24rem;
+}
+
+.card img {
+  max-height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.5rem;
+}
+
+/* @media (max-width:800px){
+.column {
+      display: block;
+      width: 10rem;
+      margin-top: 10px;
   }
 
   .card img {
-    max-height: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 6rem;
   }
+} */
 
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
+/* added CSS */
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background:#00b894;
 }
 
-  @media (max-width:800px){
-	.column {
-        display: block;
-        width: 10rem;
-        margin-top: 10px;
-    }
+.nav-list > ul{
+display: flex;
+list-style: none;  
+}
 
-    .card img {
-        max-width: 6rem;
-    }
+ul > li {
+margin: 0 20px;  
+}
+
+li > a {
+color: #fff;
+font-size: 1.1rem;
+}
+
+.logo {
+margin-left: 1rem;
+color: #fff;
+}
+
+.login-button {
+margin-right: 2rem;
+}
+
+.image-banner {
+margin-top: 3rem;
+margin-bottom: -1rem;
+height: 3rem;
+width: 100%;
+background-color: #F80032;
+}
+
+.image-banner > h2 {
+color: #fff;
+text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  margin: 1rem;
+  max-width: 300px;
+}
+.product-one {
+  display: flex;
+  margin: 5rem 0;
+  max-width: 100%;
+}
+.product-image img{
+  margin-left: 1rem ;
+  width: 250px !important;
+  height: 175px !important;
+  border-radius: 1rem;
+}
+}
+
+.product-one {
+display: flex;
+margin: 5rem 0;
+max-width: 50%;
+}
+
+.product-image img{
+margin-left: 1rem;
+width: 500px;
+height: 350px;
+border-radius: 1rem;
+}
+
+.product-description button {
+align-items: center;
+}
+
+footer {
+padding: 0.8rem;
+background-color: #2d3436;
+color: #fff;
+text-align: center;
 }
