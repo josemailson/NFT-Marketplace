@@ -125,6 +125,50 @@ text-align: center;
 }
 }
 
+@media only screen and (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 1rem;
+    max-width: 250px;
+  }
+  .product-one {
+    display: flex;
+    margin: 5rem 0;
+    max-width: 100%;
+  }
+  .product-image img{
+    margin-left: 1rem ;
+    width: 250px !important;
+    height: 175px !important;
+    border-radius: 1rem;
+  }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      margin: 1rem;
+      max-width: 250px;
+    }
+    .product-one {
+      display: flex;
+      margin: 5rem 0;
+      max-width: 100%;
+    }
+    .product-image img{
+      margin-left: 1rem ;
+      width: 250px !important;
+      height: 175px !important;
+      border-radius: 1rem;
+    }
+    }
+
 .product-one {
 display: flex;
 margin: 5rem 0;
